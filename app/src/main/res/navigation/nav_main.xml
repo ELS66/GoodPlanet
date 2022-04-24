@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/navigation_home_root">
+
+    <fragment
+        android:id="@+id/navigation_home_root"
+        android:name="com.example.goodplanet.ui.main.RootHomeFragment"
+        android:label="RootHomeFragment" />
+
+    <fragment
+        android:id="@+id/navigation_map_root"
+        android:name="com.example.goodplanet.ui.main.RootMapFragment"
+        android:label="RootMapFragment"/>
+
+    <fragment
+        android:id="@+id/navigation_me_root"
+        android:name="com.example.goodplanet.ui.main.RootMeFragment"
+        android:label="RootMeFragment"/>
+</navigation>

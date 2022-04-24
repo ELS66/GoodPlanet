@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FB"
+    tools:context=".ui.main.RootMeFragment">
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:background="@drawable/activity_mine_back" />
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:id="@+id/cir_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_me_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:textSize="22sp"
+        android:text="吕帅贤"
+        android:textColor="#0E131A"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/cir_image"
+        app:layout_constraintTop_toTopOf="@+id/cir_image" />
+
+    <TextView
+        android:id="@+id/tv_me_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="管理员"
+        app:layout_constraintStart_toEndOf="@+id/cir_image"
+        app:layout_constraintTop_toBottomOf="@+id/tv_me_name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_me_1"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/cir_image"
+        android:background="@drawable/home_page_module_back">
+
+        <LinearLayout
+            android:id="@+id/ll_me_checkpass"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/me_check_pass"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="帐号与安全"
+                android:textSize="15sp"
+                android:textColor="#FF0E131A"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="#FF83868F"/>
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/mine_item_arrow_icon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_me_root"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/me_root"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="系统权限申请"
+                android:textSize="15sp"
+                android:textColor="#FF0E131A"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="#FF83868F"/>
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/mine_item_arrow_icon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_me_clear"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/me_root"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="清理缓存"
+                android:textSize="15sp"
+                android:textColor="#FF0E131A"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_me_clear"
+                android:textSize="13sp"
+                android:textColor="#FF83868F"/>
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/mine_item_arrow_icon"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_me_2"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/ll_me_1"
+        android:background="@drawable/home_page_module_back">
+
+        <LinearLayout
+            android:id="@+id/ll_me_aboutme"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/me_aboutme"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="关于我们"
+                android:textSize="15sp"
+                android:textColor="#FF0E131A"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/activity_mine_role_name_department"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="#FF83868F"/>
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/mine_item_arrow_icon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_me_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/me_feedback"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="意见反馈"
+                android:textSize="15sp"
+                android:textColor="#FF0E131A"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="#FF83868F"/>
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/mine_item_arrow_icon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_me_quit"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/me_quit"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="意见反馈"
+                android:textSize="15sp"
+                android:textColor="#FF0E131A"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="#FF83868F"/>
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/mine_item_arrow_icon"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
