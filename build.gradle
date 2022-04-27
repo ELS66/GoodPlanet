@@ -3,10 +3,10 @@ buildscript {
     ext.kotlin_version = '1.4.32'
     repositories {
         maven{ url'http://maven.aliyun.com/nexus/content/groups/public/' }
+        mavenCentral()
         maven{ url'http://maven.aliyun.com/nexus/content/repositories/jcenter'}
         jcenter()
         google()
-        mavenCentral()
         maven {url "https://plugins.gradle.org/m2/"    }
     }
     dependencies {

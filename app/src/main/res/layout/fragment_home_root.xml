@@ -4,64 +4,626 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.main.RootHomeFragment"
-    android:background="#f4f5f6">
+    android:background="#f4f5f6"
+    tools:context=".ui.main.RootHomeFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout"
+
+        <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:background="#ffffff"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_height="match_parent">
 
-            <ImageView
-                android:id="@+id/iv_ai"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_marginEnd="10dp"
-                android:src="@drawable/home_ai"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/iv_qr"
-                app:layout_constraintTop_toTopOf="parent" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            <ImageView
-                android:id="@+id/iv_qr"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_marginEnd="10dp"
-                android:src="@drawable/home_qr"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_main1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_main"
+                    android:elevation="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/banner">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:text="美丽家园"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                    <LinearLayout
+                        android:id="@+id/ll_dangan"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="10dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toTopOf="@+id/view3"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view2">
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:padding="15dp"
+                            android:src="@drawable/dangan" />
 
-        <com.youth.banner.Banner
-            android:id="@+id/banner"
-            android:layout_width="0dp"
-            android:layout_height="250dp"
-            android:background="#FFFFFF"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="档案管理"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_yuyue"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toTopOf="@+id/view3"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+                        app:layout_constraintStart_toEndOf="@+id/guideline8"
+                        app:layout_constraintTop_toBottomOf="@+id/view2">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:padding="15dp"
+                            android:src="@drawable/yuyue" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="预约服务"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_yuancheng"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toTopOf="@+id/view3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/guideline9"
+                        app:layout_constraintTop_toBottomOf="@+id/view2">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:padding="15dp"
+                            android:src="@drawable/yuancheng" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="远程健康监测"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_dingjia"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="10dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toTopOf="@+id/view4"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view3">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:padding="15dp"
+                            android:src="@drawable/yanglao" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="养老服务"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_xuzhi"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toTopOf="@+id/view4"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+                        app:layout_constraintStart_toEndOf="@+id/guideline8"
+                        app:layout_constraintTop_toBottomOf="@+id/view3">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:padding="15dp"
+                            android:src="@drawable/xuzhi" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="乐养服务"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_wenda"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toTopOf="@+id/view4"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/guideline9"
+                        app:layout_constraintTop_toBottomOf="@+id/view3">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:padding="15dp"
+                            android:src="@drawable/wenda" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="养老问答"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="基本功能"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/view1"
+                        app:layout_constraintStart_toEndOf="@+id/view1"
+                        app:layout_constraintTop_toTopOf="@+id/view1" />
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="5dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/myblue"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#FFFFFF"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+                    <View
+                        android:id="@+id/view3"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="90dp"
+                        android:background="#EEEEEE"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+                    <View
+                        android:id="@+id/view4"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="100dp"
+                        android:background="#EEEEEE"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+                    <View
+                        android:id="@+id/view5"
+                        android:layout_width="1dp"
+                        android:layout_height="0dp"
+                        android:background="#EEEEEE"
+                        app:layout_constraintBottom_toTopOf="@+id/view4"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+                        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+                    <View
+                        android:id="@+id/view6"
+                        android:layout_width="1dp"
+                        android:layout_height="0dp"
+                        android:background="#EEEEEE"
+                        app:layout_constraintBottom_toTopOf="@+id/view4"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+                        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.33" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.66" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_main2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_main"
+                    android:elevation="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cl_main1">
+
+                    <LinearLayout
+                        android:id="@+id/ll_shenghuo"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="10dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toTopOf="@+id/view23"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline28"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view22">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:padding="15dp"
+                            android:src="@drawable/home_sh" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="生活服务"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_jianshen"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toTopOf="@+id/view23"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline29"
+                        app:layout_constraintStart_toEndOf="@+id/guideline28"
+                        app:layout_constraintTop_toBottomOf="@+id/view22">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:padding="15dp"
+                            android:src="@drawable/home_js" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="老年健身"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_goutong"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toTopOf="@+id/view23"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/guideline29"
+                        app:layout_constraintTop_toBottomOf="@+id/view22">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:padding="15dp"
+                            android:src="@drawable/home_gt" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="家人沟通"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_jiankang"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="10dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toTopOf="@+id/view24"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline28"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view23">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:padding="15dp"
+                            android:src="@drawable/home_jk" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="健康卫士"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_xuexi"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toTopOf="@+id/view24"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline29"
+                        app:layout_constraintStart_toEndOf="@+id/guideline28"
+                        app:layout_constraintTop_toBottomOf="@+id/view23">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:padding="15dp"
+                            android:src="@drawable/home_xx" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="老年学习"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_yule"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toTopOf="@+id/view24"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/guideline29"
+                        app:layout_constraintTop_toBottomOf="@+id/view23">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:padding="15dp"
+                            android:src="@drawable/home_yl" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="老年娱乐"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="附加功能"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/view21"
+                        app:layout_constraintStart_toEndOf="@+id/view21"
+                        app:layout_constraintTop_toTopOf="@+id/view21" />
+
+                    <View
+                        android:id="@+id/view21"
+                        android:layout_width="5dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#FFCA3A"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/view22"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#FFFFFF"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view21" />
+
+                    <View
+                        android:id="@+id/view23"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="90dp"
+                        android:background="#EEEEEE"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view22" />
+
+                    <View
+                        android:id="@+id/view24"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="100dp"
+                        android:background="#EEEEEE"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view23" />
+
+                    <View
+                        android:id="@+id/view25"
+                        android:layout_width="1dp"
+                        android:layout_height="0dp"
+                        android:background="#EEEEEE"
+                        app:layout_constraintBottom_toTopOf="@+id/view24"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline28"
+                        app:layout_constraintTop_toBottomOf="@+id/view22" />
+
+                    <View
+                        android:id="@+id/view26"
+                        android:layout_width="1dp"
+                        android:layout_height="0dp"
+                        android:background="#EEEEEE"
+                        app:layout_constraintBottom_toTopOf="@+id/view24"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline29"
+                        app:layout_constraintTop_toBottomOf="@+id/view22" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.33" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.66" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="#ffffff"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/iv_ai"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/home_ai"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/iv_qr"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/iv_qr"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/home_qr"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="乐养"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <com.youth.banner.Banner
+                    android:id="@+id/banner"
+                    android:layout_width="0dp"
+                    android:layout_height="180dp"
+                    android:background="#F4F5F6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.36" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.4" />
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

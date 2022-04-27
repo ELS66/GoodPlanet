@@ -275,11 +275,14 @@ class LoginActivity : BaseActivity() {
     fun handleLoginSuccess() {
         seaveLoginUser(et_login_username.text.toString(), et_login_password.text.toString())
         savestate(et_login_username.text.toString())
-        val intent = Intent(this,MainActivity::class.java)
-        if("root" == et_login_username.text.toString().trim()) {
-
-        } else {
+        if("root" == et_login_password.text.toString().trim()) {
+            val intent = Intent(this,RootMainActivity::class.java)
             startActivity(intent)
+            finish()
+        } else {
+            val intent = Intent(this,MainActivity::class.java)
+            startActivity(intent)
+            finish()
         }
 
     }

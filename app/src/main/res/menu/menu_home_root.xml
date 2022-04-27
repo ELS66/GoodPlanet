@@ -8,8 +8,8 @@
 
     <item
         android:id="@+id/navigation_map_root"
-        android:icon="@drawable/ic_baseline_map_24"
-        android:title="地图" />
+        android:icon="@drawable/ic_wenda"
+        android:title="问答" />
 
     <item
         android:id="@+id/navigation_me_root"

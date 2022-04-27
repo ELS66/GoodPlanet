@@ -19,6 +19,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="70dp"
         android:id="@+id/cir_image"
+        android:src="@drawable/ai"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -27,9 +28,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:textSize="22sp"
-        android:text="吕帅贤"
         android:textColor="#0E131A"
+        android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/cir_image"
         app:layout_constraintTop_toTopOf="@+id/cir_image" />
@@ -235,14 +235,15 @@
                 android:layout_height="24dp"
                 android:layout_marginLeft="20dp"
                 android:src="@drawable/me_quit"/>
+
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
                 android:layout_weight="1"
-                android:text="意见反馈"
-                android:textSize="15sp"
+                android:text="退出登录"
                 android:textColor="#FF0E131A"
-                android:layout_marginLeft="15dp"/>
+                android:textSize="15sp" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

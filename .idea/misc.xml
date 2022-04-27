@@ -3,7 +3,44 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/layout/fragment_home_root.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/drawable-v24/bg_cf_blue297eff_radius4.xml" value="0.379" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/drawable/bg_add.xml" value="0.352" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/drawable/bg_item.xml" value="0.352" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/drawable/bg_main.xml" value="0.379" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/drawable/bg_sh_lan.xml" value="0.3385" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/drawable/bg_text.xml" value="0.3385" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/drawable/bg_text_bt.xml" value="0.3385" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/drawable/bg_yc.xml" value="0.3655" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/drawable/bg_yx_bk.xml" value="0.352" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3385" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/drawable/item_tab.xml" value="0.3385" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/drawable/shape_arc_background_2dp_297eff.xml" value="0.352" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/drawable/shape_arc_background_2dp_a9cbff.xml" value="0.3655" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/drawable/tab_bg.xml" value="0.3385" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/drawable/tab_bg_se.xml" value="0.3385" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/drawable/tab_bg_unse.xml" value="0.3385" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/drawable/yx_wh.xml" value="0.352" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/drawable/yx_ye.xml" value="0.352" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/layout/activity_ding_jia.xml" value="0.35052083333333334" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/layout/activity_jian_kang.xml" value="0.33645833333333336" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/layout/activity_le_yang.xml" value="0.35052083333333334" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/layout/activity_login.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/layout/activity_main.xml" value="0.22056159420289856" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/layout/activity_order.xml" value="0.3645833333333333" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/layout/activity_root_main.xml" value="0.22056159420289856" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/layout/activity_sheng_huo.xml" value="0.33645833333333336" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/layout/activity_youxi.xml" value="0.33645833333333336" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/layout/activity_yuancheng.xml" value="0.3645833333333333" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/layout/fragment_fu_wu.xml" value="0.35052083333333334" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/layout/fragment_home_root.xml" value="0.33980582524271846" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/layout/fragment_map_root.xml" value="0.35052083333333334" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/layout/fragment_me_root.xml" value="0.3645833333333333" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/layout/fragment_shou_hu.xml" value="0.25" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/layout/fragment_taochan.xml" value="0.35052083333333334" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/layout/item_tab" value="0.1636271529888551" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/layout/item_tab.xml" value="0.33645833333333336" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/menu/menu_home_root.xml" value="0.35052083333333334" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GoodPlanet/GoodPlanet/app/src/main/res/menu/menu_root.xml" value="0.35052083333333334" />
       </map>
     </option>
   </component>

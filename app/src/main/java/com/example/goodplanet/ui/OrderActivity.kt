@@ -67,6 +67,9 @@ class OrderActivity : BaseActivity() {
                 }
             }
         }
+        binding.ivHeaderLeft.setOnClickListener {
+            finish()
+        }
     }
 
     override fun handleHeaderEventRight1(view: View?) {

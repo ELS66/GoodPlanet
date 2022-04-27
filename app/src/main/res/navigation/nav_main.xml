@@ -17,5 +17,13 @@
     <fragment
         android:id="@+id/navigation_me_root"
         android:name="com.example.goodplanet.ui.main.RootMeFragment"
-        android:label="RootMeFragment"/>
+        android:label="RootMeFragment">
+
+        <argument
+            android:defaultValue="false"
+            android:name="name"
+            app:argType="string"
+            />
+
+    </fragment>
 </navigation>

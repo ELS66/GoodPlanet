@@ -2,15 +2,34 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.goodplanet">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/app"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GoodPlanet">
+        <activity
+            android:name=".ui.LeYangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.RootMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.YouxiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.JianKangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ShengHuoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DingJiaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.YuanchengActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.OrderActivity"
             android:exported="false" />
@@ -28,7 +47,9 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
+            android:exported="false"></activity>
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
