@@ -29,6 +29,7 @@ class ShouHuFragment : Fragment() {
             .load(context?.resources?.getDrawable(R.drawable.sh_tx1))
             .apply(RequestOptions.circleCropTransform())
             .into(binding.ivSh1)
+
         Glide.with(requireActivity())
             .load(context?.resources?.getDrawable(R.drawable.sh_tx2))
             .apply(RequestOptions.circleCropTransform())
