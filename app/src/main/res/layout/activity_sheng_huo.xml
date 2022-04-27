@@ -49,7 +49,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:background="@drawable/bg_sh"
+        android:background="@drawable/bg_shsh"
         app:layout_constraintTop_toBottomOf="@+id/cl_sh1"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout

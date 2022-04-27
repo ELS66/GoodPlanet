@@ -274,7 +274,7 @@ class LoginActivity : BaseActivity() {
      */
     fun handleLoginSuccess() {
         seaveLoginUser(et_login_username.text.toString(), et_login_password.text.toString())
-        savestate(et_login_username.text.toString())
+        savestate(et_login_username.text.toString(),et_login_password.text.toString())
         if("root" == et_login_password.text.toString().trim()) {
             val intent = Intent(this,RootMainActivity::class.java)
             startActivity(intent)
@@ -301,17 +301,18 @@ class LoginActivity : BaseActivity() {
             e.printStackTrace()
         }
         editor.putString("login_userinfo", userString)
+        editor.putString("pass",passWord)
         editor.commit()
     }
 
     /**
      * 保存当前登录用户
      */
-    private fun savestate(username: String) {
+    private fun savestate(username: String,pass : String) {
         val sharedPreferences = getSharedPreferences("login_state", MODE_PRIVATE)
         val editor = sharedPreferences.edit()
         editor.putString("username", username)
-        editor.putString("password", "") //清除，过段时间可以去掉
+        editor.putString("password", pass) //清除，过段时间可以去掉
         editor.commit()
     }
 

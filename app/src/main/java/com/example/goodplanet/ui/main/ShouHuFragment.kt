@@ -5,10 +5,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
 import com.example.goodplanet.R
+import com.example.goodplanet.databinding.FragmentShouHuBinding
 
 
 class ShouHuFragment : Fragment() {
+
+    private lateinit var binding: FragmentShouHuBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,7 +24,16 @@ class ShouHuFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_shou_hu, container, false)
+        binding = FragmentShouHuBinding.inflate(layoutInflater,container,false)
+        Glide.with(requireActivity())
+            .load(context?.resources?.getDrawable(R.drawable.sh_tx1))
+            .apply(RequestOptions.circleCropTransform())
+            .into(binding.ivSh1)
+        Glide.with(requireActivity())
+            .load(context?.resources?.getDrawable(R.drawable.sh_tx2))
+            .apply(RequestOptions.circleCropTransform())
+            .into(binding.ivSh2)
+        return binding.root
     }
 
 }

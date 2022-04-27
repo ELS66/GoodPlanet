@@ -6,382 +6,488 @@
     android:layout_height="match_parent"
     tools:context=".ui.main.ShouHuFragment">
 
-   <LinearLayout
+   <androidx.core.widget.NestedScrollView
        android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:background="#F4F5F6"
-       android:orientation="vertical">
+       android:layout_height="match_parent">
 
-       <androidx.constraintlayout.widget.ConstraintLayout
+       <LinearLayout
            android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:background="@color/myblue"
-           app:layout_constraintStart_toStartOf="parent"
-           app:layout_constraintTop_toTopOf="parent">
+           android:layout_height="match_parent"
+           android:background="#F4F5F6"
+           android:orientation="vertical">
 
-           <LinearLayout
+           <androidx.constraintlayout.widget.ConstraintLayout
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:layout_marginTop="50dp"
-               android:layout_marginEnd="30dp"
-               android:layout_marginStart="30dp"
-               android:orientation="horizontal"
-               app:layout_constraintEnd_toEndOf="parent"
+               android:background="@color/myblue"
                app:layout_constraintStart_toStartOf="parent"
                app:layout_constraintTop_toTopOf="parent">
 
                <LinearLayout
-                   android:layout_width="0dp"
-                   android:layout_weight="1"
+                   android:layout_width="match_parent"
                    android:layout_height="wrap_content"
-                   android:orientation="vertical"
-                   android:gravity="center">
+                   android:layout_marginTop="50dp"
+                   android:layout_marginEnd="30dp"
+                   android:layout_marginStart="30dp"
+                   android:orientation="horizontal"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent">
 
-                   <ImageView
-                       android:layout_width="60dp"
-                       android:layout_height="60dp"
-                       android:src="@drawable/ai"/>
+                   <LinearLayout
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:gravity="center">
+
+                       <ImageView
+                           android:layout_width="60dp"
+                           android:layout_height="60dp"
+                           android:id="@+id/iv_sh2"
+                           android:src="@drawable/ai"/>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="刘英长者"
+                           android:textColor="#EEEEEE"
+                           android:layout_marginTop="10dp"
+                           android:layout_marginBottom="20dp"/>
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:gravity="center">
+
+                       <ImageView
+                           android:layout_width="60dp"
+                           android:layout_height="60dp"
+                           android:id="@+id/iv_sh1"
+                           android:src="@drawable/ai"/>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="张三长者"
+                           android:textColor="#EEEEEE"
+                           android:layout_marginTop="10dp" />
+
+                       <View
+                           android:layout_width="match_parent"
+                           android:layout_height="3dp"
+                           android:layout_gravity="bottom"
+                           android:layout_marginTop="8dp"
+                           android:layout_marginStart="20dp"
+                           android:layout_marginEnd="20dp"
+                           android:background="@color/white"/>
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:gravity="center">
+
+                       <ImageView
+                           android:layout_width="60dp"
+                           android:layout_height="60dp"
+                           android:src="@drawable/add"
+                           android:background="@drawable/yx_wh"/>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="添加其他长者"
+                           android:textColor="#EEEEEE"
+                           android:layout_marginTop="10dp"
+                           android:layout_marginBottom="20dp"/>
+
+                   </LinearLayout>
+
+
+               </LinearLayout>
+
+
+           </androidx.constraintlayout.widget.ConstraintLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:layout_marginStart="10dp"
+               android:layout_marginEnd="10dp"
+               android:orientation="vertical"
+               android:background="@drawable/bg_main">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:background="@drawable/bg_shsh">
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       android:text="张三长者 当天活动统计报告"
+                       android:textColor="@color/black"
+                       android:textSize="16sp"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginBottom="10dp"
+                       android:layout_marginStart="8dp"/>
 
                    <TextView
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:text="刘英长者"
-                       android:textColor="#EEEEEE"
-                       android:layout_marginTop="10dp"
-                       android:layout_marginBottom="20dp"/>
+                       android:text="昨天23:23"
+                       android:layout_gravity="center_vertical"
+                       android:layout_marginEnd="10dp"/>
 
                </LinearLayout>
 
                <LinearLayout
-                   android:layout_width="0dp"
-                   android:layout_weight="1"
+                   android:layout_width="match_parent"
                    android:layout_height="wrap_content"
-                   android:orientation="vertical"
-                   android:gravity="center">
+                   android:gravity="center_vertical">
 
                    <ImageView
-                       android:layout_width="60dp"
-                       android:layout_height="60dp"
-                       android:src="@drawable/ai"/>
+                       android:layout_width="30dp"
+                       android:layout_height="30dp"
+                       android:src="@drawable/sh_jiance"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginBottom="10dp"
+                       android:layout_marginStart="15dp"/>
 
                    <TextView
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       android:text="自动监测报警：1次"
+                       android:textSize="16sp"
+                       android:textColor="@color/black"
+                       android:layout_marginStart="10dp"/>
+
+                   <ImageView
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:text="张三长者"
-                       android:textColor="#EEEEEE"
-                       android:layout_marginTop="10dp" />
-
-                   <View
-                       android:layout_width="match_parent"
-                       android:layout_height="3dp"
-                       android:layout_gravity="bottom"
-                       android:layout_marginTop="8dp"
-                       android:layout_marginStart="20dp"
-                       android:layout_marginEnd="20dp"
-                       android:background="@color/white"/>
+                       android:src="@drawable/right_arrows"
+                       android:layout_marginEnd="10dp"/>
 
                </LinearLayout>
 
                <LinearLayout
-                   android:layout_width="0dp"
-                   android:layout_weight="1"
+                   android:layout_width="match_parent"
                    android:layout_height="wrap_content"
-                   android:orientation="vertical"
-                   android:gravity="center">
+                   android:gravity="center_vertical">
 
                    <ImageView
-                       android:layout_width="60dp"
-                       android:layout_height="60dp"
-                       android:src="@drawable/add"
-                       android:background="@drawable/yx_wh"/>
+                       android:layout_width="30dp"
+                       android:layout_height="30dp"
+                       android:src="@drawable/sh_sos"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginBottom="10dp"
+                       android:layout_marginStart="15dp"/>
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       android:text="手动SOS报警：1次"
+                       android:textSize="16sp"
+                       android:textColor="@color/black"
+                       android:layout_marginStart="10dp"/>
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/right_arrows"
+                       android:layout_marginEnd="10dp"/>
+
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center_vertical">
+
+                   <ImageView
+                       android:layout_width="30dp"
+                       android:layout_height="30dp"
+                       android:src="@drawable/sh_home"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginBottom="10dp"
+                       android:layout_marginStart="15dp"/>
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       android:text="离家记录：2次"
+                       android:textSize="16sp"
+                       android:textColor="@color/black"
+                       android:layout_marginStart="10dp"/>
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/right_arrows"
+                       android:layout_marginEnd="10dp"/>
+
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center_vertical">
+
+                   <ImageView
+                       android:layout_width="30dp"
+                       android:layout_height="30dp"
+                       android:src="@drawable/sh_wc"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginBottom="10dp"
+                       android:layout_marginStart="15dp"/>
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       android:text="大解记录：2次"
+                       android:textSize="16sp"
+                       android:textColor="@color/black"
+                       android:layout_marginStart="10dp"/>
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/right_arrows"
+                       android:layout_marginEnd="10dp"/>
+
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center_vertical">
+
+                   <ImageView
+                       android:layout_width="30dp"
+                       android:layout_height="30dp"
+                       android:src="@drawable/sh_bed"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginBottom="10dp"
+                       android:layout_marginStart="15dp"/>
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       android:text="在床记录：4次"
+                       android:textSize="16sp"
+                       android:textColor="@color/black"
+                       android:layout_marginStart="10dp"/>
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/right_arrows"
+                       android:layout_marginEnd="10dp"/>
+
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center_vertical">
+
+                   <ImageView
+                       android:layout_width="30dp"
+                       android:layout_height="30dp"
+                       android:src="@drawable/sh_xl"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginBottom="10dp"
+                       android:layout_marginStart="15dp"/>
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       android:text="心率监测：正常"
+                       android:textSize="16sp"
+                       android:textColor="@color/black"
+                       android:layout_marginStart="10dp"/>
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/right_arrows"
+                       android:layout_marginEnd="10dp"/>
+
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center_vertical">
+
+                   <ImageView
+                       android:layout_width="30dp"
+                       android:layout_height="30dp"
+                       android:src="@drawable/sh_sh"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginBottom="10dp"
+                       android:layout_marginStart="15dp"/>
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       android:text="手表离手记录：2次"
+                       android:textSize="16sp"
+                       android:textColor="@color/black"
+                       android:layout_marginStart="10dp"/>
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/right_arrows"
+                       android:layout_marginEnd="10dp"/>
+
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center_vertical">
+
+                   <ImageView
+                       android:layout_width="30dp"
+                       android:layout_height="30dp"
+                       android:src="@drawable/sh_zl"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginBottom="10dp"
+                       android:layout_marginStart="15dp"/>
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       android:text="活动计步：3254步"
+                       android:textSize="16sp"
+                       android:textColor="@color/black"
+                       android:layout_marginStart="10dp"/>
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/right_arrows"
+                       android:layout_marginEnd="10dp"/>
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:layout_marginStart="10dp"
+               android:layout_marginEnd="10dp"
+               android:layout_marginBottom="10dp"
+               android:orientation="vertical"
+               android:background="@drawable/bg_main">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:background="@drawable/bg_shsh">
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       android:text="张三长者 昨晚睡眠统计报告"
+                       android:textColor="@color/black"
+                       android:textSize="16sp"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginBottom="10dp"
+                       android:layout_marginStart="8dp"/>
 
                    <TextView
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:text="添加其他长者"
-                       android:textColor="#EEEEEE"
-                       android:layout_marginTop="10dp"
-                       android:layout_marginBottom="20dp"/>
+                       android:text="07:20"
+                       android:layout_gravity="center_vertical"
+                       android:layout_marginEnd="10dp"/>
 
                </LinearLayout>
 
-
-           </LinearLayout>
-
-
-       </androidx.constraintlayout.widget.ConstraintLayout>
-
-       <LinearLayout
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:layout_marginTop="10dp"
-           android:layout_marginStart="10dp"
-           android:layout_marginEnd="10dp"
-           android:orientation="vertical"
-           android:background="@drawable/bg_main">
-
-           <LinearLayout
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:orientation="horizontal"
-               android:background="#EEEEEE">
-
-               <TextView
-                   android:layout_width="0dp"
-                   android:layout_weight="1"
+               <LinearLayout
+                   android:layout_width="match_parent"
                    android:layout_height="wrap_content"
-                   android:text="张三长者 当天活动统计报告"
-                   android:textColor="@color/black"
-                   android:textSize="16sp"
-                   android:layout_marginTop="10dp"
-                   android:layout_marginBottom="10dp"
-                   android:layout_marginStart="8dp"/>
+                   android:gravity="center_vertical">
 
-               <TextView
-                   android:layout_width="wrap_content"
+                   <ImageView
+                       android:layout_width="30dp"
+                       android:layout_height="30dp"
+                       android:src="@drawable/sh_shuijiao"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginBottom="10dp"
+                       android:layout_marginStart="15dp"/>
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       android:text="睡眠质量：睡眠充足"
+                       android:textSize="16sp"
+                       android:textColor="@color/black"
+                       android:layout_marginStart="10dp"/>
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/right_arrows"
+                       android:layout_marginEnd="10dp"/>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
                    android:layout_height="wrap_content"
-                   android:text="昨天23:23"
-                   android:layout_gravity="center_vertical"
-                   android:layout_marginEnd="10dp"/>
+                   android:gravity="center_vertical">
 
-           </LinearLayout>
+                   <ImageView
+                       android:layout_width="30dp"
+                       android:layout_height="30dp"
+                       android:src="@drawable/sh_xb"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginBottom="10dp"
+                       android:layout_marginStart="15dp"/>
 
-           <LinearLayout
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:gravity="center_vertical">
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       android:text="夜尿记录：2次"
+                       android:textSize="16sp"
+                       android:textColor="@color/black"
+                       android:layout_marginStart="10dp"/>
 
-               <ImageView
-                   android:layout_width="40dp"
-                   android:layout_height="40dp"
-                   android:src="@drawable/jiazheng"
-                   android:layout_marginTop="10dp"
-                   android:layout_marginBottom="10dp"
-                   android:layout_marginStart="15dp"/>
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/right_arrows"
+                       android:layout_marginEnd="10dp"/>
 
-               <TextView
-                   android:layout_width="0dp"
-                   android:layout_weight="1"
-                   android:layout_height="wrap_content"
-                   android:text="自动监测报警：1次"
-                   android:textSize="16sp"
-                   android:textColor="@color/black"
-                   android:layout_marginStart="10dp"/>
-
-               <ImageView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:src="@drawable/right_arrows"
-                   android:layout_marginEnd="10dp"/>
-
-           </LinearLayout>
-
-           <LinearLayout
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:gravity="center_vertical">
-
-               <ImageView
-                   android:layout_width="40dp"
-                   android:layout_height="40dp"
-                   android:src="@drawable/jiazheng"
-                   android:layout_marginTop="10dp"
-                   android:layout_marginBottom="10dp"
-                   android:layout_marginStart="15dp"/>
-
-               <TextView
-                   android:layout_width="0dp"
-                   android:layout_weight="1"
-                   android:layout_height="wrap_content"
-                   android:text="自动监测报警：1次"
-                   android:textSize="16sp"
-                   android:textColor="@color/black"
-                   android:layout_marginStart="10dp"/>
-
-               <ImageView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:src="@drawable/right_arrows"
-                   android:layout_marginEnd="10dp"/>
-
-           </LinearLayout>
-           <LinearLayout
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:gravity="center_vertical">
-
-               <ImageView
-                   android:layout_width="40dp"
-                   android:layout_height="40dp"
-                   android:src="@drawable/jiazheng"
-                   android:layout_marginTop="10dp"
-                   android:layout_marginBottom="10dp"
-                   android:layout_marginStart="15dp"/>
-
-               <TextView
-                   android:layout_width="0dp"
-                   android:layout_weight="1"
-                   android:layout_height="wrap_content"
-                   android:text="自动监测报警：1次"
-                   android:textSize="16sp"
-                   android:textColor="@color/black"
-                   android:layout_marginStart="10dp"/>
-
-               <ImageView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:src="@drawable/right_arrows"
-                   android:layout_marginEnd="10dp"/>
-
-           </LinearLayout>
-           <LinearLayout
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:gravity="center_vertical">
-
-               <ImageView
-                   android:layout_width="40dp"
-                   android:layout_height="40dp"
-                   android:src="@drawable/jiazheng"
-                   android:layout_marginTop="10dp"
-                   android:layout_marginBottom="10dp"
-                   android:layout_marginStart="15dp"/>
-
-               <TextView
-                   android:layout_width="0dp"
-                   android:layout_weight="1"
-                   android:layout_height="wrap_content"
-                   android:text="自动监测报警：1次"
-                   android:textSize="16sp"
-                   android:textColor="@color/black"
-                   android:layout_marginStart="10dp"/>
-
-               <ImageView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:src="@drawable/right_arrows"
-                   android:layout_marginEnd="10dp"/>
-
-           </LinearLayout>
-           <LinearLayout
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:gravity="center_vertical">
-
-               <ImageView
-                   android:layout_width="40dp"
-                   android:layout_height="40dp"
-                   android:src="@drawable/jiazheng"
-                   android:layout_marginTop="10dp"
-                   android:layout_marginBottom="10dp"
-                   android:layout_marginStart="15dp"/>
-
-               <TextView
-                   android:layout_width="0dp"
-                   android:layout_weight="1"
-                   android:layout_height="wrap_content"
-                   android:text="自动监测报警：1次"
-                   android:textSize="16sp"
-                   android:textColor="@color/black"
-                   android:layout_marginStart="10dp"/>
-
-               <ImageView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:src="@drawable/right_arrows"
-                   android:layout_marginEnd="10dp"/>
-
-           </LinearLayout>
-           <LinearLayout
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:gravity="center_vertical">
-
-               <ImageView
-                   android:layout_width="40dp"
-                   android:layout_height="40dp"
-                   android:src="@drawable/jiazheng"
-                   android:layout_marginTop="10dp"
-                   android:layout_marginBottom="10dp"
-                   android:layout_marginStart="15dp"/>
-
-               <TextView
-                   android:layout_width="0dp"
-                   android:layout_weight="1"
-                   android:layout_height="wrap_content"
-                   android:text="自动监测报警：1次"
-                   android:textSize="16sp"
-                   android:textColor="@color/black"
-                   android:layout_marginStart="10dp"/>
-
-               <ImageView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:src="@drawable/right_arrows"
-                   android:layout_marginEnd="10dp"/>
-
-           </LinearLayout>
-           <LinearLayout
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:gravity="center_vertical">
-
-               <ImageView
-                   android:layout_width="40dp"
-                   android:layout_height="40dp"
-                   android:src="@drawable/jiazheng"
-                   android:layout_marginTop="10dp"
-                   android:layout_marginBottom="10dp"
-                   android:layout_marginStart="15dp"/>
-
-               <TextView
-                   android:layout_width="0dp"
-                   android:layout_weight="1"
-                   android:layout_height="wrap_content"
-                   android:text="自动监测报警：1次"
-                   android:textSize="16sp"
-                   android:textColor="@color/black"
-                   android:layout_marginStart="10dp"/>
-
-               <ImageView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:src="@drawable/right_arrows"
-                   android:layout_marginEnd="10dp"/>
-
-           </LinearLayout>
-           <LinearLayout
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:gravity="center_vertical">
-
-               <ImageView
-                   android:layout_width="40dp"
-                   android:layout_height="40dp"
-                   android:src="@drawable/jiazheng"
-                   android:layout_marginTop="10dp"
-                   android:layout_marginBottom="10dp"
-                   android:layout_marginStart="15dp"/>
-
-               <TextView
-                   android:layout_width="0dp"
-                   android:layout_weight="1"
-                   android:layout_height="wrap_content"
-                   android:text="自动监测报警：1次"
-                   android:textSize="16sp"
-                   android:textColor="@color/black"
-                   android:layout_marginStart="10dp"/>
-
-               <ImageView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:src="@drawable/right_arrows"
-                   android:layout_marginEnd="10dp"/>
+               </LinearLayout>
 
            </LinearLayout>
 
        </LinearLayout>
 
-   </LinearLayout>
+   </androidx.core.widget.NestedScrollView>
 
 </FrameLayout>
