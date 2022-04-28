@@ -90,6 +90,12 @@ class RootHomeFragment : Fragment() {
         binding.llYule.setOnClickListener {
             startActivity(Intent(context,YouxiActivity::class.java))
         }
+        binding.llJiankang.setOnClickListener {
+            startActivity(Intent(context,JianKangActivity::class.java))
+        }
+        binding.llXuexi.setOnClickListener {
+            startActivity(Intent(context,XueXiActivity::class.java))
+        }
     }
 
 

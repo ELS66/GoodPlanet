@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GoodPlanet">
         <activity
+            android:name=".ui.XueXiActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.LeYangActivity"
             android:exported="false" />
         <activity
@@ -47,7 +50,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

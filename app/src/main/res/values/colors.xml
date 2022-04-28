@@ -10,4 +10,5 @@
     <color name="header_cloud_bg">#FFFFFF</color>
     <color name="transparent">#00000000</color>
     <color name="myblue">#297EFF</color>
+    <color name="red">#F04B71</color>
 </resources>
