@@ -33,6 +33,7 @@ class RootMeFragment : Fragment() {
         if (pass == "root") {
             binding.tvMeLevel.text = "管理员"
             binding.clMeRoot.visibility = View.VISIBLE
+            binding.clMeRoot2.visibility = View.VISIBLE
             Glide.with(requireActivity())
                 .load(context?.resources?.getDrawable(R.drawable.ai))
                 .into(binding.cirImage)

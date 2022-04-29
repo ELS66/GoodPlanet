@@ -213,7 +213,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginTop="5dp"
-                            android:text="半失能"
+                            android:text="半护理"
                             android:textColor="@color/black"
                             android:textSize="12sp" />
 
@@ -236,7 +236,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginTop="5dp"
-                            android:text="失能"
+                            android:text="全护理"
                             android:textColor="@color/black"
                             android:textSize="12sp" />
 
@@ -252,14 +252,14 @@
                         <ImageView
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:src="@drawable/dj_hu3" />
+                            android:src="@drawable/dj_hu4" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginTop="5dp"
-                            android:text="失能"
+                            android:text="特级护理"
                             android:textColor="@color/black"
                             android:textSize="12sp" />
 
